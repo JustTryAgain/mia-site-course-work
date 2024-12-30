@@ -2,7 +2,11 @@
 module.exports = {
   content: [ "./*.html","./assets/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        labelle: ['"La Belle Aurore"', 'regular'], // Добавляем шрифт
+      },
+    },
   },
   plugins: [],
 }
