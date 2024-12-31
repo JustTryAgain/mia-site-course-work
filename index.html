@@ -4,44 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/output.css">
   <title>RELAX</title>
 </head>
-<body class="bg-Green-50 font-serif text-gray-800 px-4">
-  <div class="container mx-auto px-4">
-    <header>
-      <nav class="bg-gray-100 p-4">
-        <ul class="flex justify-between items-center space-x-6">
-          <li><a href="#" class="font-labelle text-2xl">Relax</a></li>
-          <li><a href="#" class="text-gray-800 hover:text-blue-500">Проживання</a></li>
-          <li><a href="#" class="text-gray-800 hover:text-blue-500">Медичний центр</a></li>
-          <li><a href="#" class="text-gray-800 hover:text-blue-500">SPA центр</a></li>
-          <li><a href="#" class="text-gray-800 hover:text-blue-500">Ресторан</a></li>
-          <li><a href="#" class="text-gray-800 hover:text-blue-500">Послуги</a></li>
-          <li><a href="#" class="text-gray-800 hover:text-blue-500">Акції</a></li>
-          <li><a href="#" class="text-gray-800 hover:text-blue-500">Контакти</a></li>
+<body class="bg-gray-100 font-roboto text-gray-800 text-base leading-relaxed">
+  <div class="container mx-auto sm:px-6 lg:px-8">
+    <header class="fixed top-0 left-0 w-full bg-green-50 shadow-md z-50 p-4">
+      <nav>
+        <ul class="flex justify-around items-center font-medium">
+          <li><a href="#" class="font-labelle text-2xl">✰ Relax ✰</a></li>
+          <li><a href="#"
+                 class="relative hover:text-blue-400 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
+            Проживання</a></li>
+          <li><a href="#"
+                 class="relative hover:text-blue-400 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
+            Медичний центр</a></li>
+          <li><a href="#"
+                 class="relative hover:text-blue-400 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
+            SPA центр</a></li>
+          <li><a href="#"
+                 class="relative hover:text-blue-400 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
+            Ресторан</a></li>
+          <li><a href="#"
+                 class="relative hover:text-blue-400 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
+            Послуги</a></li>
+          <li><a href="#"
+                 class="relative hover:text-blue-400 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
+            Акції
+          </a></li>
+          <li class="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"
+                 class="fill-current text-gray-800 hover:text-green-500 transition-colors duration-300">
+              <path d="m23.5,11c-.276,0-.5-.224-.5-.5,0-5.238-4.262-9.5-9.5-9.5-.276,0-.5-.224-.5-.5s.224-.5.5-.5c5.79,0,10.5,4.71,10.5,10.5,0,.276-.224.5-.5.5Zm-3.5-.5c0-3.584-2.916-6.5-6.5-6.5-.276,0-.5.224-.5.5s.224.5.5.5c3.033,0,5.5,2.467,5.5,5.5,0,.276.224.5.5.5s.5-.224.5-.5Zm2.234,11.771l.978-1.125c.508-.508.788-1.184.788-1.902s-.28-1.395-.837-1.945l-2.446-1.873c-1.048-1.048-2.753-1.049-3.803-.003l-1.532,1.494c-3.68-1.499-6.678-4.5-8.294-8.303l1.488-1.525c1.049-1.049,1.049-2.756.043-3.756l-1.959-2.543c-1.017-1.017-2.813-.993-3.78-.023l-1.174,1.024C.605,2.886,0,4.373,0,5.976c0,7.749,10.275,18.024,18.024,18.024,1.603,0,3.089-.605,4.21-1.729ZM5.909,1.446l1.959,2.543c.659.659.659,1.732-.004,2.396l-1.722,1.766c-.138.142-.18.352-.106.536,1.729,4.305,5.113,7.688,9.286,9.28.182.07.388.027.527-.108l1.766-1.722s.003-.003.004-.005c.639-.64,1.704-.681,2.44.043l2.446,1.873c.659.659.659,1.731-.023,2.416l-.979,1.125c-.908.91-2.144,1.411-3.479,1.411C10.864,23,1,13.136,1,5.976c0-1.335.501-2.571,1.387-3.456l1.175-1.025c.336-.336.779-.5,1.215-.5.419,0,.831.152,1.133.452Z"/>
+            </svg>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="text-white h-screen bg-[url('/assets/img/hotel-main.jpg')] bg-cover bg-center">
+      <section class="text-white h-screen bg-[url('/assets/img/hotel-main.jpg')] bg-cover bg-center py-12 lg:py-16">
         <div class="flex flex-col items-center justify-center h-full">
-          <h2 class="text-4xl font-bold">Відпочинок в Карпатах починається з Relax</h2>
+          <h2 class="text-4xl font-bold">Відпочинок в Карпатах починається з ✰Relax✰</h2>
           <h3 class="text-2xl font-bold">Отримуйте максимальне задоволення від життя, докладаючи мінімум
             зусиль!</h3>
           <button>Акційні пропозиції</button>
           <button>Бронювання</button>
         </div>
       </section>
-      <section>
+      <section class="py-12 lg:py-16">
         <h2>Варіанти проживання</h2>
-        <p>Для наших гостей пропонуємо різномаїття номерів: затишні апартаменти та будиночки, побудовані з натурального дерева, а також сучасні комфортабельні номери у новому СПА-корпусі.</p>
+        <p>Для наших гостей пропонуємо різномаїття номерів: затишні апартаменти та будиночки, побудовані з натурального
+          дерева, а також сучасні комфортабельні номери у новому СПА-корпусі.</p>
       </section>
-      <section>
-        <h2>Популярні послуги</h2>
-        <p>Послуги, які наші клієнти обирають найчастіше</p>
-        <ul>
+      <section class="py-12 lg:py-16">
+        <h2 class="space-y-4">Популярні послуги</h2>
+        <p class="space-y-4">Послуги, які наші клієнти обирають найчастіше</p>
+        <ul class="space-y-4">
           <li>SPA</li>
           <li>Баня, Чан</li>
           <li>Єкскурсії</li>
@@ -49,13 +69,13 @@
         </ul>
         <p>Всі послуги --></p>
       </section>
-      <section>
+      <section class="py-12 lg:py-16">
         <h2>Фотогалерея</h2>
       </section>
-      <section>
+      <section class="py-12 lg:py-16">
         <h2>Відгуки</h2>
       </section>
-      <section>
+      <section class="py-12 lg:py-16">
         <h2>Форма для бронювання</h2>
       </section>
     </main>

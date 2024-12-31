@@ -1,10 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [ "./*.html","./assets/**/*.{html,js}"],
+  content: ["./*.html", "./assets/**/*.{html,js}"],
   theme: {
     extend: {
       fontFamily: {
-        labelle: ['"La Belle Aurore"', 'regular'], // Добавляем шрифт
+        roboto: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+        labelle: ['"La Belle Aurore"', 'cursive'],
       },
     },
   },
