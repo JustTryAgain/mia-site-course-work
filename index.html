@@ -35,8 +35,8 @@
             Акції
           </a></li>
           <li class="w-6 h-6">
-            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"
-                 class="fill-current text-gray-800 hover:text-green-500 transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                 class="cursor-pointer fill-current text-gray-800 hover:text-green-500 transition-colors duration-300">
               <path d="m23.5,11c-.276,0-.5-.224-.5-.5,0-5.238-4.262-9.5-9.5-9.5-.276,0-.5-.224-.5-.5s.224-.5.5-.5c5.79,0,10.5,4.71,10.5,10.5,0,.276-.224.5-.5.5Zm-3.5-.5c0-3.584-2.916-6.5-6.5-6.5-.276,0-.5.224-.5.5s.224.5.5.5c3.033,0,5.5,2.467,5.5,5.5,0,.276.224.5.5.5s.5-.224.5-.5Zm2.234,11.771l.978-1.125c.508-.508.788-1.184.788-1.902s-.28-1.395-.837-1.945l-2.446-1.873c-1.048-1.048-2.753-1.049-3.803-.003l-1.532,1.494c-3.68-1.499-6.678-4.5-8.294-8.303l1.488-1.525c1.049-1.049,1.049-2.756.043-3.756l-1.959-2.543c-1.017-1.017-2.813-.993-3.78-.023l-1.174,1.024C.605,2.886,0,4.373,0,5.976c0,7.749,10.275,18.024,18.024,18.024,1.603,0,3.089-.605,4.21-1.729ZM5.909,1.446l1.959,2.543c.659.659.659,1.732-.004,2.396l-1.722,1.766c-.138.142-.18.352-.106.536,1.729,4.305,5.113,7.688,9.286,9.28.182.07.388.027.527-.108l1.766-1.722s.003-.003.004-.005c.639-.64,1.704-.681,2.44.043l2.446,1.873c.659.659.659,1.731-.023,2.416l-.979,1.125c-.908.91-2.144,1.411-3.479,1.411C10.864,23,1,13.136,1,5.976c0-1.335.501-2.571,1.387-3.456l1.175-1.025c.336-.336.779-.5,1.215-.5.419,0,.831.152,1.133.452Z"/>
             </svg>
           </li>
@@ -45,18 +45,55 @@
     </header>
     <main>
       <section class="text-white h-screen bg-[url('/assets/img/hotel-main.jpg')] bg-cover bg-center py-12 lg:py-16">
-        <div class="flex flex-col items-center justify-center h-full">
-          <h2 class="text-4xl font-bold">Відпочинок в Карпатах починається з ✰Relax✰</h2>
-          <h3 class="text-2xl font-bold">Отримуйте максимальне задоволення від життя, докладаючи мінімум
-            зусиль!</h3>
-          <button>Акційні пропозиції</button>
-          <button>Бронювання</button>
+        <div class="flex flex-col items-center justify-around h-full">
+          <div class="flex flex-col items-center justify-between gap-4 mt-20">
+            <h2 class="text-4xl font-bold">Відпочинок в Карпатах починається з ✰Relax✰</h2>
+            <h2 class="text-2xl font-bold">Незабутній відпочинок та оздоровлення в Карпатах для всієї сімї</h2>
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <button class="text-lg p-2 w-48 h-12 font-semibold border-2 border-white rounded-2xl hover:border-none hover:bg-gray-100 hover:ring-2 hover:ring-gray-100 hover:ring-offset-2 hover:ring-offset-transparent hover:shadow-xl hover:text-gray-800 transition duration-300 ease-in-out">
+              Акційні пропозиції
+            </button>
+            <button class="text-lg p-2 w-48 h-12 font-semibold border-2 border-white rounded-2xl hover:border-none hover:bg-gray-100 hover:ring-2 hover:ring-gray-100 hover:ring-offset-2 hover:ring-offset-transparent hover:shadow-xl hover:text-gray-800 transition duration-300 ease-in-out">
+              Бронювання
+            </button>
+          </div>
+          <div class="flex flex-col justify-center items-center ">
+            <span class="text-lg font-semibold pb-4">Про Нас</span>
+            <svg class="w-10 h-10 cursor-pointer animate-bounce" viewBox="0 0 128 128"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path class="fill-gray-100"
+                    d="M64.1 0C28.8 0 .2 28.7.2 64s28.6 64 63.9 64S128 99.3 128 64c-.1-35.3-28.7-64-63.9-64zm0 122.7C31.7 122.7 5.5 96.4 5.5 64c0-32.4 26.2-58.7 58.6-58.7s58.6 26.3 58.6 58.7c-.1 32.4-26.3 58.7-58.6 58.7zm2.6-34.2V24h-5.3v64.5L37.1 64.2 33.3 68 64 98.8l.1-.1.1.1L94.9 68 91 64.2 66.7 88.5z"/>
+            </svg>
+          </div>
         </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gray-100 rounded-t-[90%]"></div>
       </section>
       <section class="py-12 lg:py-16">
-        <h2>Варіанти проживання</h2>
-        <p>Для наших гостей пропонуємо різномаїття номерів: затишні апартаменти та будиночки, побудовані з натурального
+        <h2 class="font-bold text-3xl py-4">Варіанти проживання</h2>
+        <p class="max-w-3xl py-4">Для наших гостей пропонуємо різномаїття номерів: затишні апартаменти та будиночки,
+          побудовані з натурального
           дерева, а також сучасні комфортабельні номери у новому СПА-корпусі.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div class="relative w-full h-80">
+            <img src="/assets/img/derevyan-corpus.jpg" alt="Image" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 flex justify-center items-center rounded-lg opacity-0 text-white text-lg font-semibold bg-black bg-opacity-50 hover:opacity-100 transition-opacity duration-300">
+              Дополнительный текст
+            </div>
+          </div>
+          <div class="relative w-full h-80">
+            <img src="/assets/img/SPA-centr.jpg" alt="Image" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 flex justify-center items-center rounded-lg opacity-0 text-white text-lg font-semibold bg-black bg-opacity-50 hover:opacity-100 transition-opacity duration-300">
+              Дополнительный текст
+            </div>
+          </div>
+          <div class="relative w-full h-80">
+            <img src="/assets/img/cottege1.jpeg" alt="Image" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 flex justify-center items-center rounded-lg opacity-0 text-white text-lg font-semibold bg-black bg-opacity-50 hover:opacity-100 transition-opacity duration-300">
+              Дополнительный текст
+            </div>
+          </div>
+        </div>
       </section>
       <section class="py-12 lg:py-16">
         <h2 class="space-y-4">Популярні послуги</h2>
