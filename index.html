@@ -44,11 +44,12 @@
       </nav>
     </header>
     <main>
-      <section class="text-white h-screen bg-[url('/assets/img/hotel-main.jpg')] bg-cover bg-center py-12 lg:py-16">
+      <section id="main"
+               class="text-white h-screen bg-[url('/assets/img/hotel-main.jpg')] bg-cover bg-center py-12 lg:py-16">
         <div class="flex flex-col items-center justify-around h-full">
           <div class="flex flex-col items-center justify-between gap-4 mt-20">
             <h2 class="text-4xl font-bold">Відпочинок в Карпатах починається з ✰Relax✰</h2>
-            <h2 class="text-2xl font-bold">Незабутній відпочинок та оздоровлення в Карпатах для всієї сімї</h2>
+            <h2 class="text-2xl font-bold">Незабутній відпочинок та оздоровлення в Карпатах для всієї сім'ї</h2>
           </div>
           <div class="flex flex-col items-center gap-4">
             <button class="text-lg p-2 w-48 h-12 font-semibold border-2 border-white rounded-2xl hover:border-none hover:bg-gray-100 hover:ring-2 hover:ring-gray-100 hover:ring-offset-2 hover:ring-offset-transparent hover:shadow-xl hover:text-gray-800 transition duration-300 ease-in-out">
@@ -69,42 +70,114 @@
         </div>
         <div class="absolute bottom-0 left-0 right-0 h-16 bg-gray-100 rounded-t-[90%]"></div>
       </section>
-      <section class="py-12 lg:py-16">
-        <h2 class="font-bold text-3xl py-4">Варіанти проживання</h2>
-        <p class="max-w-3xl py-4">Для наших гостей пропонуємо різномаїття номерів: затишні апартаменти та будиночки,
-          побудовані з натурального
-          дерева, а також сучасні комфортабельні номери у новому СПА-корпусі.</p>
+      <section id="info" class="py-12">
+        <h2 class="font-bold text-3xl pb-6">Варіанти проживання</h2>
+        <p class="max-w-3xl pb-6">Для наших гостей пропонуємо різномаїття номерів: затишні апартаменти та будиночки,
+          побудовані з натурального дерева, а також сучасні комфортабельні номери у новому СПА-корпусі.</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div class="relative w-full h-80">
-            <img src="/assets/img/derevyan-corpus.jpg" alt="Image" class="w-full h-full object-cover rounded-lg">
-            <div class="absolute inset-0 flex justify-center items-center rounded-lg opacity-0 text-white text-lg font-semibold bg-black bg-opacity-50 hover:opacity-100 transition-opacity duration-300">
-              Дополнительный текст
-            </div>
+          <div class="relative w-full min-w-80 h-72 text-white group">
+            <a href="#">
+              <img src="/assets/img/derevyan-corpus.jpg" alt="Дерев'яний корпус"
+                   class="w-full h-full object-cover rounded-lg">
+              <div class="absolute inset-0 flex flex-col justify-end pb-6 text-shadow-lg text-center bg-black bg-opacity-15 rounded-lg transition-opacity duration-300 opacity-100 group-hover:opacity-0">
+                <h2 class="text-lg font-semibold ">Номери у дерев'яних корпусах</h2>
+                <p class="font-normal">Дивитися пропозиції</p>
+              </div>
+              <div class="pb-6 absolute inset-0 flex flex-col justify-end text-lg text-center font-semibold bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Комфортні і по-домашньому затишні номери оснащені всім необхідним для приємного відпочинку.
+              </div>
+            </a>
           </div>
-          <div class="relative w-full h-80">
-            <img src="/assets/img/SPA-centr.jpg" alt="Image" class="w-full h-full object-cover rounded-lg">
-            <div class="absolute inset-0 flex justify-center items-center rounded-lg opacity-0 text-white text-lg font-semibold bg-black bg-opacity-50 hover:opacity-100 transition-opacity duration-300">
-              Дополнительный текст
-            </div>
+          <div class="relative w-full min-w-80 h-72 text-white group">
+            <a href="#">
+              <img src="/assets/img/SPA-centr.jpg" alt="Номери у СПА центрі"
+                   class="w-full h-full object-cover rounded-lg">
+              <div class="absolute inset-0 flex flex-col justify-end pb-6 text-shadow-lg text-center bg-transparent rounded-lg transition-opacity duration-300 opacity-100 group-hover:opacity-0">
+                <h2 class="text-lg font-semibold ">Номери у SPA корпусі</h2>
+                <p class="font-normal">Дивитися пропозиції</p>
+              </div>
+              <div class="pb-6 absolute inset-0 flex flex-col justify-end text-lg text-center font-semibold bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Пориньте у світ релаксу та комфорту, обравши затишний номер у СПА-центрі. Ідеальне місце для відновлення
+                тіла та душі.
+              </div>
+            </a>
           </div>
-          <div class="relative w-full h-80">
-            <img src="/assets/img/cottege1.jpeg" alt="Image" class="w-full h-full object-cover rounded-lg">
-            <div class="absolute inset-0 flex justify-center items-center rounded-lg opacity-0 text-white text-lg font-semibold bg-black bg-opacity-50 hover:opacity-100 transition-opacity duration-300">
-              Дополнительный текст
-            </div>
+          <div class="relative w-full min-w-80 h-72 text-white group">
+            <a href="#">
+              <img src="/assets/img/cottege1.jpeg" alt="Коттеджі" class="w-full h-full object-cover rounded-lg">
+              <div class="absolute inset-0 flex flex-col justify-end pb-6 text-shadow-lg text-center bg-transparent rounded-lg transition-opacity duration-300 opacity-100 group-hover:opacity-0">
+                <h2 class="text-lg font-semibold ">Котеджні будиночки</h2>
+                <p class="font-normal">Дивитися пропозиції</p>
+              </div>
+              <div class="pb-6 absolute inset-0 flex flex-col justify-end text-lg text-center font-semibold bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Бажаєте провести час на природі біля озера? Орендуйте один з 11 будиночків, в яких розміщується від 2 до
+                9 осіб.
+              </div>
+            </a>
           </div>
         </div>
       </section>
-      <section class="py-12 lg:py-16">
-        <h2 class="space-y-4">Популярні послуги</h2>
-        <p class="space-y-4">Послуги, які наші клієнти обирають найчастіше</p>
-        <ul class="space-y-4">
-          <li>SPA</li>
-          <li>Баня, Чан</li>
-          <li>Єкскурсії</li>
-          <li>Риболовля</li>
-        </ul>
-        <p>Всі послуги --></p>
+      <section class="py-12">
+        <h2 class="font-bold text-3xl pb-6">Популярні послуги</h2>
+        <div class="flex justify-between text-center items-center pb-6">
+          <p class="max-w-3xl">Послуги, які наші клієнти обирають найчастіше:</p>
+          <button type="button"
+                  class="flex rounded-lg text-center p-2 border border-gray-800 hover:text-white hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">
+            <span>Всі послуги</span>
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M18.75 11.9958C18.75 11.5816 18.4142 11.2458 18 11.2458H6C5.58579 11.2458 5.25 11.5816 5.25 11.9958C5.25 12.4101 5.58579 12.7458 6 12.7458H18C18.4142 12.7458 18.75 12.4101 18.75 11.9958Z"
+                    fill="CurrentColor"></path>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.4697 5.46967C11.1768 5.76256 11.1768 6.23744 11.4697 6.53033L16.9393 12L11.4697 17.4697C11.1768 17.7626 11.1768 18.2374 11.4697 18.5303C11.7626 18.8232 12.2374 18.8232 12.5303 18.5303L18.5303 12.5303C18.8232 12.2374 18.8232 11.7626 18.5303 11.4697L12.5303 5.46967C12.2374 5.17678 11.7626 5.17678 11.4697 5.46967Z"
+                    fill="CurrentColor"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="relative group text-center">
+            <img src="/assets/img/spa-pool.jpg" alt="SPA" class="rounded-lg w-full h-72 object-cover">
+            <p class="mt-2 font-medium">SPA</p>
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p class="text-white text-sm px-4">Розслабляючі SPA-процедури для вашого комфорту</p>
+            </div>
+          </div>
+          <div class="relative group text-center">
+            <img src="/assets/img/restorant.jpg" alt="Ресторан" class="rounded-lg w-full h-72 object-cover">
+            <p class="mt-2 font-medium">Ресторан</p>
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p class="text-white text-sm px-4">Смачні страви на будь-який смак</p>
+            </div>
+          </div>
+          <div class="relative group text-center">
+            <img src="/assets/img/exkyrsiya.jpg" alt="Екскурсії" class="rounded-lg w-full h-72 object-cover">
+            <p class="mt-2 font-medium">Екскурсії</p>
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p class="text-white text-sm px-4">Захоплюючі мандрівки Карпатами</p>
+            </div>
+          </div>
+          <div class="relative group text-center">
+            <img src="/assets/img/fishing.jpg" alt="Риболовля" class="rounded-lg w-full h-72 object-cover">
+            <p class="mt-2 font-medium">Риболовля</p>
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p class="text-white text-sm px-4">Чудові місця для риболовлі</p>
+            </div>
+          </div>
+          <div class="relative group text-center">
+            <img src="/assets/img/masage.jpg" alt="Масаж" class="rounded-lg w-full h-72 object-cover">
+            <p class="mt-2 font-medium">Масаж</p>
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p class="text-white text-sm px-4">Релакс та відновлення</p>
+            </div>
+          </div>
+          <div class="relative group text-center">
+            <img src="/assets/img/bannya.jpg" alt="Баня" class="rounded-lg w-full h-72 object-cover">
+            <p class="mt-2 font-medium">Баня</p>
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p class="text-white text-sm px-4">Традиційна баня для відпочинку</p>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="py-12 lg:py-16">
         <h2>Фотогалерея</h2>
@@ -124,7 +197,7 @@
         <li>Ресторан</li>
         <li>Медичний центр</li>
         <li>SPA</li>
-        <li>Конференц зал</li>
+        <li>Конференцій-зал</li>
       </ul>
       <h4>Каталог</h4>
       <ul>
@@ -133,7 +206,7 @@
         <li>Відгуки</li>
         <li>Тарифи</li>
       </ul>
-      <h4>Контакти і соцмережі</h4>
+      <h4>Контакти й соцмережі</h4>
       <ul>
         <li>+38083759323</li>
         <li>relaxresort@gmail.com</li>
