@@ -7,14 +7,25 @@
   <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
   <link rel="stylesheet" href="assets/css/output.css">
+  <script src="assets/js/main.js" defer></script>
   <title>RELAX</title>
 </head>
 <body class="bg-gray-100 font-roboto text-gray-800 text-base leading-relaxed">
   <div class="container mx-auto sm:px-6 lg:px-8">
     <header class="fixed top-0 left-0 w-full bg-green-50 shadow-md z-50 p-4">
       <nav>
-        <ul class="flex justify-around items-center font-medium">
-          <li><a href="index.html" class="font-labelle text-2xl">✰ Relax ✰</a></li>
+        <ul class="flex justify-around items-center text-center font-medium">
+          <li class="group">
+            <a href="index.html" class="font-labelle text-2xl">
+              <span class="inline-block w-6 h-6 transform transition-transform duration-300 ease-out group-hover:rotate-180">✰</span>
+              <span>Relax</span>
+              <span class="inline-block w-6 h-6 transform transition-transform duration-300 ease-out group-hover:-rotate-180">✰</span>
+            </a>
+          </li>
+          <li><a href="pages/about.html"
+                 class="relative hover:text-blue-400 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
+            Про нас
+          </a></li>
           <li><a href="pages/accommodation.html"
                  class="relative hover:text-blue-400 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
             Проживання</a></li>
@@ -30,15 +41,58 @@
           <li><a href="pages/services.html"
                  class="relative hover:text-blue-400 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
             Послуги</a></li>
-          <li><a href="pages/about.html"
+          <li><a href="pages/promotions.html"
                  class="relative hover:text-blue-400 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
-            Про нас
+            Акції
           </a></li>
-          <li class="w-6 h-6">
+          <li class="w-6 h-6 relative group cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                 class="cursor-pointer fill-current text-gray-800 hover:text-green-500 transition-colors duration-300">
+                 class="pb-5 cursor-pointer fill-current text-gray-800 group-hover:text-green-500 transition-colors duration-300">
               <path d="m23.5,11c-.276,0-.5-.224-.5-.5,0-5.238-4.262-9.5-9.5-9.5-.276,0-.5-.224-.5-.5s.224-.5.5-.5c5.79,0,10.5,4.71,10.5,10.5,0,.276-.224.5-.5.5Zm-3.5-.5c0-3.584-2.916-6.5-6.5-6.5-.276,0-.5.224-.5.5s.224.5.5.5c3.033,0,5.5,2.467,5.5,5.5,0,.276.224.5.5.5s.5-.224.5-.5Zm2.234,11.771l.978-1.125c.508-.508.788-1.184.788-1.902s-.28-1.395-.837-1.945l-2.446-1.873c-1.048-1.048-2.753-1.049-3.803-.003l-1.532,1.494c-3.68-1.499-6.678-4.5-8.294-8.303l1.488-1.525c1.049-1.049,1.049-2.756.043-3.756l-1.959-2.543c-1.017-1.017-2.813-.993-3.78-.023l-1.174,1.024C.605,2.886,0,4.373,0,5.976c0,7.749,10.275,18.024,18.024,18.024,1.603,0,3.089-.605,4.21-1.729ZM5.909,1.446l1.959,2.543c.659.659.659,1.732-.004,2.396l-1.722,1.766c-.138.142-.18.352-.106.536,1.729,4.305,5.113,7.688,9.286,9.28.182.07.388.027.527-.108l1.766-1.722s.003-.003.004-.005c.639-.64,1.704-.681,2.44.043l2.446,1.873c.659.659.659,1.731-.023,2.416l-.979,1.125c-.908.91-2.144,1.411-3.479,1.411C10.864,23,1,13.136,1,5.976c0-1.335.501-2.571,1.387-3.456l1.175-1.025c.336-.336.779-.5,1.215-.5.419,0,.831.152,1.133.452Z"/>
             </svg>
+            <div class="absolute transform -translate-x-1/2 bg-gray-800 text-white p-6 rounded-lg shadow-md max-w-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+              <h2 class="text-xl font-semibold mb-4">Контакти й соцмережі:</h2>
+              <div class="space-y-4">
+                <div>
+                  <p class="font-bold">Рецепція:</p>
+                  <ul class="list-none pl-0">
+                    <li><a href="tel:+380935012277" class="text-blue-400 hover:underline">+38 093 501 22 77</a></li>
+                    <li><a href="tel:+380675012277" class="text-blue-400 hover:underline">+38 067 501 22 77</a></li>
+                    <li><a href="tel:+380505068887" class="text-blue-400 hover:underline">+38 050 506 88 87</a></li>
+                    <li><a href="tel:+380322590777" class="text-blue-400 hover:underline">+38 0322 59 07 77</a></li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p class="font-bold">Ресторан:</p>
+                  <ul class="list-none pl-0">
+                    <li><a href="tel:+380677886521" class="text-blue-400 hover:underline">+38 067 788 65 21</a></li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p class="font-bold">Мед центр:</p>
+                  <ul class="list-none pl-0">
+                    <li><a href="tel:+380681599374" class="text-blue-400 hover:underline">+38 068 159 93 74</a></li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p class="font-bold">E-mail:</p>
+                  <a href="mailto:relaxresort@gmail.com" class="text-blue-400 hover:underline">relaxresort@gmail.com</a>
+                </div>
+
+                <div>
+                  <p class="font-bold">Адреса:</p>
+                  <p>Львівська обл. с.Німецьке вул.Бандери 19\45</p>
+                </div>
+
+                <div>
+                  <p class="font-bold">Режим роботи:</p>
+                  <p>Пн. – Пт.: с 9:00 до 18:00</p>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
@@ -47,22 +101,70 @@
       <section id="main"
                class="text-white h-screen bg-[url('../img/hotel-main.jpg')] bg-cover bg-center py-12 lg:py-16">
         <div class="flex flex-col items-center justify-around h-full">
-          <div class="flex flex-col items-center justify-between gap-4 mt-20">
+          <div class="flex flex-col items-center justify-between gap-4 mt-20 px-6">
             <h2 class="text-4xl font-bold">Відпочинок в Карпатах починається з ✰Relax✰</h2>
             <h2 class="text-2xl font-bold">Незабутній відпочинок та оздоровлення в Карпатах для всієї сім'ї</h2>
           </div>
+          <div id="bookModal"
+               class="fixed z-50 inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center hidden">
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md text-gray-700 w-96">
+              <h2 class="text-xl font-semibold mb-4">Заповніть форму для бронювання:</h2>
+              <form id="bookingForm" autocomplete="off">
+                <div class="mb-4">
+                  <label for="modalName" class="block text-sm font-medium">Ім'я</label>
+                  <input type="text"
+                         id="modalName"
+                         name="name"
+                         class="w-full p-2 border border-gray-300 rounded-lg"
+                         minlength="2"
+                         maxlength="15"
+                         placeholder="Введіть ваше ім'я" required>
+                </div>
+                <div class="mb-4">
+                  <label for="modalPhone" class="block text-sm font-medium">Номер телефону</label>
+                  <input type="tel"
+                         id="modalPhone"
+                         name="phone"
+                         class="w-full p-2 border border-gray-300 rounded-lg"
+                         pattern="\+?\d*"
+                         minlength="10"
+                         maxlength="15"
+                         inputmode="numeric"
+                         placeholder="Введіть номер телефону" required>
+                </div>
+                <div class="mb-4">
+                  <button id="bookModalSubmitBtn" type="submit"
+                          class="w-full p-2 bg-yellow-500 text-gray-800 font-semibold rounded-2xl hover:scale-105 transition-all duration-300">
+                    Відправити
+                  </button>
+                </div>
+              </form>
+              <button id="closeBookModalBtn"
+                      class="w-full border border-black rounded-xl text-gray-500  hover:bg-red-300 hover:text-black">
+                Закрити
+              </button>
+            </div>
+          </div>
+          <div id="successModal"
+               class="fixed z-50 inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center hidden">
+            <div class="bg-gray-100 p-6 rounded-lg text-center shadow-md w-96">
+              <h2 class="text-xl text-green-600 font-semibold mb-4"></h2>
+              <button id="closeSuccessModalBtn"
+                      class="w-full border border-black rounded-xl text-gray-500  hover:bg-red-300 hover:text-black">
+                Закрити
+              </button>
+            </div>
+          </div>
           <div class="flex flex-col items-center gap-4">
-            <a href="pages/promotions.html"
-               class="text-lg p-2 w-48 h-12 font-semibold border-2 border-white rounded-2xl hover:scale-105 hover:bg-yellow-500 hover:text-gray-800 transition-all duration-300">
-              Акційні пропозиції
-            </a>
-            <button class="text-lg p-2 w-48 h-12 font-semibold border-2 border-white rounded-2xl hover:scale-105 hover:bg-yellow-500 hover:text-gray-800 transition-all duration-300">
+            <button id="bookBtn"
+                    class="text-lg p-2 w-48 h-12 font-semibold border-2 border-white rounded-2xl hover:scale-105 hover:bg-yellow-500 hover:text-gray-800 transition-all duration-300">
               Бронювання
             </button>
           </div>
           <div class="flex flex-col justify-center items-center ">
             <span class="text-lg font-semibold pb-4">Детальніше</span>
-            <svg class="w-10 h-10 cursor-pointer animate-bounce fill-current text-gray-100" viewBox="0 0 128 128"
+            <svg id="scrollDownBtn" class="w-10 h-10 cursor-pointer animate-bounce fill-current text-gray-100"
+                 viewBox="0 0 128 128"
                  xmlns="http://www.w3.org/2000/svg">
               <path d="M64.1 0C28.8 0 .2 28.7.2 64s28.6 64 63.9 64S128 99.3 128 64c-.1-35.3-28.7-64-63.9-64zm0 122.7C31.7 122.7 5.5 96.4 5.5 64c0-32.4 26.2-58.7 58.6-58.7s58.6 26.3 58.6 58.7c-.1 32.4-26.3 58.7-58.6 58.7zm2.6-34.2V24h-5.3v64.5L37.1 64.2 33.3 68 64 98.8l.1-.1.1.1L94.9 68 91 64.2 66.7 88.5z"/>
             </svg>
@@ -76,7 +178,7 @@
           побудовані з натурального дерева, а також сучасні комфортабельні номери у новому СПА-корпусі.</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           <div class="relative w-full min-w-80 h-72 text-white group">
-            <a href="#">
+            <a href="pages/accommodation.html#wood">
               <img src="assets/img/wooden-housing.jpg" alt="Дерев'яний корпус"
                    class="w-full h-full object-cover rounded-lg">
               <div class="absolute inset-0 flex flex-col justify-end pb-6 text-shadow text-center bg-black bg-opacity-15 rounded-lg transition-opacity duration-300 opacity-100 group-hover:opacity-0">
@@ -89,7 +191,7 @@
             </a>
           </div>
           <div class="relative w-full min-w-80 h-72 text-white group">
-            <a href="#">
+            <a href="pages/accommodation.html#spa">
               <img src="assets/img/SPA-center.jpg" alt="Номери у СПА центрі"
                    class="w-full h-full object-cover rounded-lg">
               <div class="absolute inset-0 flex flex-col justify-end pb-6 text-shadow text-center bg-transparent rounded-lg transition-opacity duration-300 opacity-100 group-hover:opacity-0">
@@ -103,7 +205,7 @@
             </a>
           </div>
           <div class="relative w-full min-w-80 h-72 text-white group">
-            <a href="#">
+            <a href="pages/accommodation.html#cottage">
               <img src="assets/img/cottage0.jpeg" alt="Котеджі" class="w-full h-full object-cover rounded-lg">
               <div class="absolute inset-0 flex flex-col justify-end pb-6 text-shadow text-center bg-transparent rounded-lg transition-opacity duration-300 opacity-100 group-hover:opacity-0">
                 <h2 class="text-lg font-semibold ">Котеджні будиночки</h2>
@@ -122,7 +224,7 @@
         <h2 class="font-bold text-3xl pb-6">Популярні послуги</h2>
         <div class="flex justify-between text-center items-center pb-6">
           <p class="max-w-3xl">Послуги, які наші клієнти обирають найчастіше:</p>
-          <button type="button"
+          <a href="pages/services.html"
                   class="flex rounded-lg text-center p-2 border border-gray-800 hover:text-white hover:bg-gray-800">
             <span>Всі послуги</span>
             <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +235,7 @@
                     d="M11.4697 5.46967C11.1768 5.76256 11.1768 6.23744 11.4697 6.53033L16.9393 12L11.4697 17.4697C11.1768 17.7626 11.1768 18.2374 11.4697 18.5303C11.7626 18.8232 12.2374 18.8232 12.5303 18.5303L18.5303 12.5303C18.8232 12.2374 18.8232 11.7626 18.5303 11.4697L12.5303 5.46967C12.2374 5.17678 11.7626 5.17678 11.4697 5.46967Z"
                     fill="CurrentColor"></path>
             </svg>
-          </button>
+          </a>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <div class="relative group text-center">
@@ -200,8 +302,8 @@
             Допомагайте тим хто береже наш спокій.<br>
             Відправ донат та отримай шанс виграти відпочинок в нашому комплексі.
           </p>
-          <button type="button"
-                  class="flex rounded-lg text-center p-2 border border-gray-800 hover:text-white hover:bg-gray-800">
+          <a href="https://savelife.in.ua/en/donate-en/#donate-army-card-once" target="_blank"
+             class="flex rounded-lg text-center p-2 border border-gray-800 hover:text-white hover:bg-gray-800">
             <span>Донат</span>
             <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -211,7 +313,7 @@
                     d="M11.4697 5.46967C11.1768 5.76256 11.1768 6.23744 11.4697 6.53033L16.9393 12L11.4697 17.4697C11.1768 17.7626 11.1768 18.2374 11.4697 18.5303C11.7626 18.8232 12.2374 18.8232 12.5303 18.5303L18.5303 12.5303C18.8232 12.2374 18.8232 11.7626 18.5303 11.4697L12.5303 5.46967C12.2374 5.17678 11.7626 5.17678 11.4697 5.46967Z"
                     fill="CurrentColor"></path>
             </svg>
-          </button>
+          </a>
         </div>
         <img src="assets/img/zsu.png" alt="ЗСУ" class="rounded-lg w-full">
       </section>
@@ -219,7 +321,10 @@
       <section id="reviews" class="py-12">
         <h2 class="font-bold text-3xl pb-6">Відгуки</h2>
         <div class="w-full h-96 border border-gray-300 flex flex-col justify-center items-center gap-5">
-          <h2 class="font-bold text-2xl">Марія</h2>
+          <h2 class="reviewName font-bold text-2xl hidden">Марія</h2>
+          <h2 class="reviewName font-bold text-2xl hidden">Анастасія</h2>
+          <h2 class="reviewName font-bold text-2xl hidden">Денис</h2>
+          <h2 class="reviewName font-bold text-2xl hidden">Інна</h2>
           <div class="flex">
             <svg class="h-5 w-5 fill-current text-yellow-500" viewBox="0 0 18 17" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
@@ -248,17 +353,32 @@
             </svg>
           </div>
           <div class="text-center flex justify-around items-center">
-            <button type="button" class="rounded-lg text-center p-4 border border-gray-300 hover:bg-gray-300">
+            <button id="prevBtn" type="button" class="rounded-lg text-center p-4 border border-gray-300 hover:bg-gray-300">
               <svg class="w-5 h-3" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 1L1 6L6 11" stroke="#333333" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round"></path>
               </svg>
             </button>
-            <p class="p-6 w-4/5">Відпочивали тут сім'єю у напівлюксі в дерев'яному будиночку. Номер чистий, затишний і
+            <p class="reviewText p-6 w-4/5 hidden">Відпочивали тут сім'єю у напівлюксі в дерев'яному будиночку. Номер чистий, затишний і
               просторий,
               є все необхідне, починаючи від халатів і закінчуючи парасолею, для дитини нам доставили ліжечко-манеж, на
               балконі є гамак, доньці дуже сподобався</p>
-            <button type="button" class="rounded-lg text-center p-4 border border-gray-300 hover:bg-gray-300">
+            <p class="reviewText p-6 w-4/5 hidden">Відпочиваємо тут не перший раз.Ідеальне місце для відновлення сил!!! Медцентр з
+              безліччю корисних процедур, різноманітність їжі на шведській лінії, завжди привітний та усміхнений
+              персонал. Повернемося обов'язково!!!</p>
+            <p class="reviewText p-6 w-4/5 hidden">Дякуємо за відпочинок! Готель дуже комфортний, все добре організовано, персонал
+              привітний і завжди готовий допомогти й відгукнутися на будь-яке прохання. Природа гарна, територія готелю
+              ідеально чиста, в номерах прибирають регулярно. Є чим займатися навіть в погану погоду, є розваги для
+              дітей. В ресторані за замовленням готують дуже смачно, обслуговування супер. Сніданки - шведський стіл теж
+              все свіже і навіть за 5 хвилин до закінчення сніданку є всі страви, поповнюють і підтримують
+              асортимент.</p>
+            <p class="reviewText p-6 w-4/5 hidden">Відпочивали у вас в червні 2023 родиною. Що можу сказати- ви дуже
+              клієнтоорієнтовані. Персонал - молодці, завжди допоможуть і підкажуть. Жодних зауважень немає. Природа та
+              локація просто супер. Їжа смачна, свіжа та різноманітна. В будиночку було все необхідне і навіть більше.
+              Спа з басейном та сауною/банею дуже приємно здивували.
+              Вдячні вам за відпочинок. Обов’язково повернемось ще і будемо радити вас друзям!
+            </p>
+            <button id="nextBtn" type="button" class="rounded-lg text-center p-4 border border-gray-300 hover:bg-gray-300">
               <svg class="w-5 h-3 transform rotate-180" viewBox="0 0 7 12" fill="none"
                    xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 1L1 6L6 11" stroke="#333333" stroke-width="2" stroke-linecap="round"
@@ -302,6 +422,7 @@
                       required
               />
               <button
+                      id="submitBtn"
                       type="submit"
                       class="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200">
                 Надіслати
@@ -317,27 +438,44 @@
           <div>
             <h4 class="text-lg font-semibold text-yellow-400 mb-4">Послуги</h4>
             <ul class="space-y-2">
-              <li class="hover:text-yellow-400 cursor-pointer">Готель</li>
-              <li class="hover:text-yellow-400 cursor-pointer">Активний відпочинок</li>
-              <li class="hover:text-yellow-400 cursor-pointer">Ресторан</li>
-              <li class="hover:text-yellow-400 cursor-pointer">Медичний центр</li>
-              <li class="hover:text-yellow-400 cursor-pointer">SPA</li>
-              <li class="hover:text-yellow-400 cursor-pointer">Конференцій-зал</li>
+              <li class="hover:text-yellow-400 cursor-pointer">
+                <a class="block" href="pages/accommodation.html">Проживання</a>
+              </li>
+              <li class="hover:text-yellow-400 cursor-pointer">
+                <a class="block" href="pages/services.html">Види відпочинку</a>
+              </li>
+              <li class="hover:text-yellow-400 cursor-pointer">
+                <a class="block" href="pages/restaurant.html">Ресторан</a>
+              </li>
+              <li class="hover:text-yellow-400 cursor-pointer">
+                <a class="block" href="pages/medicalCenter.html">Медичний центр</a>
+              </li>
+              <li class="hover:text-yellow-400 cursor-pointer">
+                <a class="block" href="pages/spa.html">SPA</a>
+              </li>
             </ul>
           </div>
           <div>
             <h4 class="text-lg font-semibold text-yellow-400 mb-4">Каталог</h4>
             <ul class="space-y-2">
-              <li class="hover:text-yellow-400 cursor-pointer">Про нас</li>
-              <li class="hover:text-yellow-400 cursor-pointer">Проживання</li>
-              <li class="hover:text-yellow-400 cursor-pointer">Відгуки</li>
-              <li class="hover:text-yellow-400 cursor-pointer">Тарифи</li>
+              <li class="hover:text-yellow-400 cursor-pointer">
+                <a class="block" href="pages/about.html">Про нас</a>
+              </li>
+              <li class="hover:text-yellow-400 cursor-pointer">
+                <a class="block" href="pages/promotions.html">Акції</a>
+              </li>
+              <li class="hover:text-yellow-400 cursor-pointer">
+                <a class="block" href="#reviews"> Відгуки</a>
+              </li>
+              <li class="hover:text-yellow-400 cursor-pointer">
+                <a class="block" href="pages/policy.html">Політика</a>
+              </li>
             </ul>
           </div>
           <div>
             <h4 class="text-lg font-semibold text-yellow-400 mb-4">Контакти й соцмережі</h4>
             <ul class="space-y-2">
-              <li>+38083759323</li>
+              <li>+38 093 501 22 77</li>
               <li>relaxresort@gmail.com</li>
               <li>Львівська обл. с.Німецьке вул.Бандери 19\45</li>
               <li class="flex gap-5">
@@ -363,7 +501,8 @@
         </div>
         <hr class="border-gray-600 my-8">
         <div class="text-center space-y-2">
-          <a href="pages/policy.html" class="text-sm text-gray-400 hover:underline hover:text-yellow-400 cursor-pointer">
+          <a href="pages/policy.html"
+             class="text-sm text-gray-400 hover:underline hover:text-yellow-400 cursor-pointer">
             Політика Конфіденційності
           </a>
           <h4 class="text-sm text-gray-500">&copy; 2025 Relax Resort Medical&SPA. All rights reserved.</h4>

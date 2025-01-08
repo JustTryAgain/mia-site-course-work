@@ -7,13 +7,23 @@
   <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/output.css">
-  <title>Relax Проживання</title>
+  <title>Relax Акції</title>
 </head>
-<body>
+<body class="container mx-auto sm:px-6 lg:px-8 bg-gray-100 font-roboto text-gray-800 text-base leading-relaxed">
   <header class="fixed top-0 left-0 w-full bg-green-50 shadow-md z-50 p-4">
     <nav>
-      <ul class="flex justify-around items-center font-medium">
-        <li><a href="../index.html" class="font-labelle text-2xl">✰ Relax ✰</a></li>
+      <ul class="flex justify-around items-center text-center font-medium">
+        <li class="group">
+          <a href="../index.html" class="font-labelle text-2xl">
+            <span class="inline-block w-6 h-6 transform transition-transform duration-300 ease-out group-hover:rotate-180">✰</span>
+            <span>Relax</span>
+            <span class="inline-block w-6 h-6 transform transition-transform duration-300 ease-out group-hover:-rotate-180">✰</span>
+          </a>
+        </li>
+        <li><a href="about.html"
+               class="relative hover:text-blue-400 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
+          Про нас
+        </a></li>
         <li><a href="accommodation.html"
                class="relative hover:text-blue-400 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
           Проживання</a></li>
@@ -29,47 +39,145 @@
         <li><a href="services.html"
                class="relative hover:text-blue-400 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
           Послуги</a></li>
-        <li><a href="about.html"
+        <li><a href="promotions.html"
                class="relative hover:text-blue-400 w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-blue-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">
-          Про нас
+          Акції
         </a></li>
-        <li class="w-6 h-6">
+        <li class="w-6 h-6 relative group cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-               class="cursor-pointer fill-current text-gray-800 hover:text-green-500 transition-colors duration-300">
+               class="pb-5 cursor-pointer fill-current text-gray-800 group-hover:text-green-500 transition-colors duration-300">
             <path d="m23.5,11c-.276,0-.5-.224-.5-.5,0-5.238-4.262-9.5-9.5-9.5-.276,0-.5-.224-.5-.5s.224-.5.5-.5c5.79,0,10.5,4.71,10.5,10.5,0,.276-.224.5-.5.5Zm-3.5-.5c0-3.584-2.916-6.5-6.5-6.5-.276,0-.5.224-.5.5s.224.5.5.5c3.033,0,5.5,2.467,5.5,5.5,0,.276.224.5.5.5s.5-.224.5-.5Zm2.234,11.771l.978-1.125c.508-.508.788-1.184.788-1.902s-.28-1.395-.837-1.945l-2.446-1.873c-1.048-1.048-2.753-1.049-3.803-.003l-1.532,1.494c-3.68-1.499-6.678-4.5-8.294-8.303l1.488-1.525c1.049-1.049,1.049-2.756.043-3.756l-1.959-2.543c-1.017-1.017-2.813-.993-3.78-.023l-1.174,1.024C.605,2.886,0,4.373,0,5.976c0,7.749,10.275,18.024,18.024,18.024,1.603,0,3.089-.605,4.21-1.729ZM5.909,1.446l1.959,2.543c.659.659.659,1.732-.004,2.396l-1.722,1.766c-.138.142-.18.352-.106.536,1.729,4.305,5.113,7.688,9.286,9.28.182.07.388.027.527-.108l1.766-1.722s.003-.003.004-.005c.639-.64,1.704-.681,2.44.043l2.446,1.873c.659.659.659,1.731-.023,2.416l-.979,1.125c-.908.91-2.144,1.411-3.479,1.411C10.864,23,1,13.136,1,5.976c0-1.335.501-2.571,1.387-3.456l1.175-1.025c.336-.336.779-.5,1.215-.5.419,0,.831.152,1.133.452Z"/>
           </svg>
+          <div class="absolute transform -translate-x-1/2 bg-gray-800 text-white p-6 rounded-lg shadow-md max-w-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+            <h2 class="text-xl font-semibold mb-4">Контакти й соцмережі:</h2>
+            <div class="space-y-4">
+              <div>
+                <p class="font-bold">Рецепція:</p>
+                <ul class="list-none pl-0">
+                  <li><a href="tel:+380935012277" class="text-blue-400 hover:underline">+38 093 501 22 77</a></li>
+                  <li><a href="tel:+380675012277" class="text-blue-400 hover:underline">+38 067 501 22 77</a></li>
+                  <li><a href="tel:+380505068887" class="text-blue-400 hover:underline">+38 050 506 88 87</a></li>
+                  <li><a href="tel:+380322590777" class="text-blue-400 hover:underline">+38 0322 59 07 77</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="font-bold">Ресторан:</p>
+                <ul class="list-none pl-0">
+                  <li><a href="tel:+380677886521" class="text-blue-400 hover:underline">+38 067 788 65 21</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="font-bold">Мед центр:</p>
+                <ul class="list-none pl-0">
+                  <li><a href="tel:+380681599374" class="text-blue-400 hover:underline">+38 068 159 93 74</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <p class="font-bold">E-mail:</p>
+                <a href="mailto:relaxresort@gmail.com" class="text-blue-400 hover:underline">relaxresort@gmail.com</a>
+              </div>
+
+              <div>
+                <p class="font-bold">Адреса:</p>
+                <p>Львівська обл. с.Німецьке вул.Бандери 19\45</p>
+              </div>
+
+              <div>
+                <p class="font-bold">Режим роботи:</p>
+                <p>Пн. – Пт.: с 9:00 до 18:00</p>
+              </div>
+            </div>
+          </div>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="h-screen"></main>
+  <main class="py-32 px-6">
+    <h2 class="font-bold text-3xl pb-8 text-center">Акційні пропозиції</h2>
+    <div class="space-y-8">
+      <div class="p-6 bg-white shadow-md rounded-lg">
+        <h3 class="text-2xl font-bold mb-4">Гаряча пропозиція</h3>
+        <p>
+          Відпочивайте вже зараз зі спеціальною знижкою 30%! Забронюйте номер на будь-які дати цього місяця та отримайте максимум комфорту за меншу ціну. Пропозиція включає смачні сніданки, доступ до спа-зони та неймовірні краєвиди Карпат. Це ваш шанс втекти від рутини та насолодитися затишком у горах. Акція діє лише до кінця місяця, тому не втрачайте часу — кількість місць обмежена!
+        </p>
+      </div>
+
+      <div class="p-6 bg-white shadow-md rounded-lg">
+        <h3 class="text-2xl font-bold mb-4">Спецпропозиція на день народження</h3>
+        <p>
+          Зробіть свій день народження незабутнім! У нашому готелі на вас чекає знижка 20% на проживання, святковий торт і шампанське у подарунок. Іменинники також отримують безкоштовну вечерю та приємний сюрприз від нашого персоналу. Це чудова нагода відсвяткувати у колі рідних та друзів серед краси Карпат. Не забудьте взяти паспорт для підтвердження дати народження. Забронюйте свято вже зараз і подаруйте собі казковий день!
+        </p>
+      </div>
+
+      <div class="p-6 bg-white shadow-md rounded-lg">
+        <h3 class="text-2xl font-bold mb-4">Знижка для військових</h3>
+        <p>
+          Ми завжди раді вітати тих, хто захищає нашу країну. Для військових діє спеціальна знижка 25% на проживання у нашому готелі. Насолоджуйтесь відпочинком у горах, відновлюйте сили та діліться моментами спокою з близькими. До послуг гостей: комфортні номери, смачне харчування та зона відпочинку з мальовничими пейзажами. Достатньо лише пред'явити військовий квиток, щоб скористатися пропозицією. Ми цінуємо вашу службу та чекаємо на вас!
+        </p>
+      </div>
+
+      <div class="p-6 bg-white shadow-md rounded-lg">
+        <h3 class="text-2xl font-bold mb-4">Знижка на довготривале бронювання</h3>
+        <p>
+          Плануєте залишитися у нас на тривалий період? Ми підготували для вас вигідну пропозицію — до 35% знижки на проживання від 7 ночей! Чим довше ви залишаєтесь, тим менше платите. У вартість включені смачні сніданки, доступ до спа-зони та вечірні розваги для всієї родини. Карпати — це ідеальне місце для перезавантаження, тож не зволікайте! Забронюйте свій номер вже сьогодні та отримайте більше від відпочинку.
+        </p>
+      </div>
+
+      <div class="p-6 bg-white shadow-md rounded-lg">
+        <h3 class="text-2xl font-bold mb-4">Відпочинок за донат ЗСУ</h3>
+        <p>
+          Долучайтесь до доброї справи та отримуйте знижку 15%! Зробіть донат на підтримку Збройних сил України на суму від 500 гривень, покажіть підтвердження, і ми запропонуємо вам спеціальну ціну на проживання. У вашому розпорядженні комфортні номери, смачне харчування та безмежні краєвиди гір. Відпочивайте з користю для себе та країни. Разом ми можемо більше! Акція діє до кінця війни, тому долучайтесь та робіть добрі справи разом із нами.
+        </p>
+      </div>
+    </div>
+  </main>
   <footer class="bg-gray-800 text-white py-10">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h4 class="text-lg font-semibold text-yellow-400 mb-4">Послуги</h4>
           <ul class="space-y-2">
-            <li class="hover:text-yellow-400 cursor-pointer">Готель</li>
-            <li class="hover:text-yellow-400 cursor-pointer">Активний відпочинок</li>
-            <li class="hover:text-yellow-400 cursor-pointer">Ресторан</li>
-            <li class="hover:text-yellow-400 cursor-pointer">Медичний центр</li>
-            <li class="hover:text-yellow-400 cursor-pointer">SPA</li>
-            <li class="hover:text-yellow-400 cursor-pointer">Конференцій-зал</li>
+            <li class="hover:text-yellow-400 cursor-pointer">
+              <a class="block" href="accommodation.html">Проживання</a>
+            </li>
+            <li class="hover:text-yellow-400 cursor-pointer">
+              <a class="block" href="services.html">Види відпочинку</a>
+            </li>
+            <li class="hover:text-yellow-400 cursor-pointer">
+              <a class="block" href="restaurant.html">Ресторан</a>
+            </li>
+            <li class="hover:text-yellow-400 cursor-pointer">
+              <a class="block" href="medicalCenter.html">Медичний центр</a>
+            </li>
+            <li class="hover:text-yellow-400 cursor-pointer">
+              <a class="block" href="spa.html">SPA</a>
+            </li>
           </ul>
         </div>
         <div>
           <h4 class="text-lg font-semibold text-yellow-400 mb-4">Каталог</h4>
           <ul class="space-y-2">
-            <li class="hover:text-yellow-400 cursor-pointer">Про нас</li>
-            <li class="hover:text-yellow-400 cursor-pointer">Проживання</li>
-            <li class="hover:text-yellow-400 cursor-pointer">Відгуки</li>
-            <li class="hover:text-yellow-400 cursor-pointer">Тарифи</li>
+            <li class="hover:text-yellow-400 cursor-pointer">
+              <a class="block" href="about.html">Про нас</a>
+            </li>
+            <li class="hover:text-yellow-400 cursor-pointer">
+              <a class="block" href="promotions.html">Акції</a>
+            </li>
+            <li class="hover:text-yellow-400 cursor-pointer">
+              <a class="block" href="../index.html#reviews"> Відгуки</a>
+            </li>
+            <li class="hover:text-yellow-400 cursor-pointer">
+              <a class="block" href="policy.html">Політика</a>
+            </li>
           </ul>
         </div>
         <div>
           <h4 class="text-lg font-semibold text-yellow-400 mb-4">Контакти й соцмережі</h4>
           <ul class="space-y-2">
-            <li>+38083759323</li>
+            <li>+38 093 501 22 77</li>
             <li>relaxresort@gmail.com</li>
             <li>Львівська обл. с.Німецьке вул.Бандери 19\45</li>
             <li class="flex gap-5">
@@ -95,9 +203,10 @@
       </div>
       <hr class="border-gray-600 my-8">
       <div class="text-center space-y-2">
-        <h4 class="text-sm text-gray-400 hover:underline hover:text-yellow-400 cursor-pointer">
+        <a href="policy.html"
+           class="text-sm text-gray-400 hover:underline hover:text-yellow-400 cursor-pointer">
           Політика Конфіденційності
-        </h4>
+        </a>
         <h4 class="text-sm text-gray-500">&copy; 2025 Relax Resort Medical&SPA. All rights reserved.</h4>
       </div>
     </div>
